@@ -1,0 +1,32 @@
+# Ignore all
+*
+
+# But don't ignore next one
+
+!/firmware
+!/firmware/CMSIS
+!/firmware/CMSIS/**
+!/firmware/config
+!/firmware/config/**
+!/firmware/hal
+!/firmware/hal/**
+!/firmware/hpl
+!/firmware/hpl/**
+!/firmware/hri
+!/firmware/hri/**
+!/firmware/samd20b
+!/firmware/samd20b/**
+!/firmware/*c
+!/firmware/*h
+!/firmware/*ewd
+!/firmware/*ewp
+
+!/board
+!/board/*.PcbDoc
+!/board/*.PrjPcb
+!/board/*.OutJob
+!/board/img
+!/board/img/*.jpg
+
+!.gitignore
+!README.md
