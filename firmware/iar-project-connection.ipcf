@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iarProjectConnection name="src" oneShot="false">
+    <device>
+        <name>ATSAMD20E16B</name>
+    </device>
+
+    <includePath>
+        <path>$PROJ_DIR$\</path>
+        <path>$PROJ_DIR$\config</path>
+        <path>$PROJ_DIR$\examples</path>
+        <path>$PROJ_DIR$\hal\include</path>
+        <path>$PROJ_DIR$\hal\utils\include</path>
+        <path>$PROJ_DIR$\hpl\core</path>
+        <path>$PROJ_DIR$\hpl\eic</path>
+        <path>$PROJ_DIR$\hpl\gclk</path>
+        <path>$PROJ_DIR$\hpl\pm</path>
+        <path>$PROJ_DIR$\hpl\port</path>
+        <path>$PROJ_DIR$\hpl\sysctrl</path>
+        <path>$PROJ_DIR$\hri</path>
+        <path>$PROJ_DIR$\</path>
+        <path>$PROJ_DIR$\CMSIS\Core\Include</path>
+        <path>$PROJ_DIR$\samd20b\include</path>
+    </includePath>
+
+    <asmIncludePath>
+        <path>$PROJ_DIR$\</path>
+        <path>$PROJ_DIR$\config</path>
+        <path>$PROJ_DIR$\examples</path>
+        <path>$PROJ_DIR$\hal\include</path>
+        <path>$PROJ_DIR$\hal\utils\include</path>
+        <path>$PROJ_DIR$\hpl\core</path>
+        <path>$PROJ_DIR$\hpl\eic</path>
+        <path>$PROJ_DIR$\hpl\gclk</path>
+        <path>$PROJ_DIR$\hpl\pm</path>
+        <path>$PROJ_DIR$\hpl\port</path>
+        <path>$PROJ_DIR$\hpl\sysctrl</path>
+        <path>$PROJ_DIR$\hri</path>
+        <path>$PROJ_DIR$\</path>
+        <path>$PROJ_DIR$\CMSIS\Core\Include</path>
+        <path>$PROJ_DIR$\samd20b\include</path>
+    </asmIncludePath>
+
+    <defines>
+        <define>__SAMD20E16B__</define>
+        <define>F_CPU=48000000</define>
+    </defines>
+
+    <asmDefines>
+        <define>__SAMD20E16B__</define>
+    </asmDefines>
+
+    <linkerFile>
+		<override>True</override>
+		<path>$PROJ_DIR$\samd20b\iar\iar\samd20e16b_flash.icf</path>
+    </linkerFile>
+
+    <files>
+
+            <path>atmel_start.c</path>
+            <path>atmel_start.h</path>
+            <path>atmel_start_pins.h</path>
+            <path>driver_init.c</path>
+            <path>driver_init.h</path>
+            <path>main.c</path>
+    
+
+        <group name="CMSIS/Core/Include">
+            <path>CMSIS/Core/Include/cmsis_armcc.h</path>
+            <path>CMSIS/Core/Include/cmsis_armclang.h</path>
+            <path>CMSIS/Core/Include/cmsis_compiler.h</path>
+            <path>CMSIS/Core/Include/cmsis_gcc.h</path>
+            <path>CMSIS/Core/Include/cmsis_iccarm.h</path>
+            <path>CMSIS/Core/Include/cmsis_version.h</path>
+            <path>CMSIS/Core/Include/core_armv8mbl.h</path>
+            <path>CMSIS/Core/Include/core_armv8mml.h</path>
+            <path>CMSIS/Core/Include/core_cm0.h</path>
+            <path>CMSIS/Core/Include/core_cm0plus.h</path>
+            <path>CMSIS/Core/Include/core_cm1.h</path>
+            <path>CMSIS/Core/Include/core_cm23.h</path>
+            <path>CMSIS/Core/Include/core_cm3.h</path>
+            <path>CMSIS/Core/Include/core_cm33.h</path>
+            <path>CMSIS/Core/Include/core_cm4.h</path>
+            <path>CMSIS/Core/Include/core_cm7.h</path>
+            <path>CMSIS/Core/Include/core_sc000.h</path>
+            <path>CMSIS/Core/Include/core_sc300.h</path>
+            <path>CMSIS/Core/Include/mpu_armv7.h</path>
+            <path>CMSIS/Core/Include/mpu_armv8.h</path>
+            <path>CMSIS/Core/Include/tz_context.h</path>
+        </group>
+
+        <group name="config">
+            <path>config/hpl_eic_config.h</path>
+            <path>config/hpl_gclk_config.h</path>
+            <path>config/hpl_pm_config.h</path>
+            <path>config/hpl_sysctrl_config.h</path>
+            <path>config/peripheral_clk_config.h</path>
+        </group>
+
+        <group name="examples">
+            <path>examples/driver_examples.c</path>
+            <path>examples/driver_examples.h</path>
+        </group>
+
+        <group name="hal/include">
+            <path>hal/include/hal_atomic.h</path>
+            <path>hal/include/hal_delay.h</path>
+            <path>hal/include/hal_ext_irq.h</path>
+            <path>hal/include/hal_gpio.h</path>
+            <path>hal/include/hal_init.h</path>
+            <path>hal/include/hal_io.h</path>
+            <path>hal/include/hal_sleep.h</path>
+            <path>hal/include/hpl_core.h</path>
+            <path>hal/include/hpl_delay.h</path>
+            <path>hal/include/hpl_ext_irq.h</path>
+            <path>hal/include/hpl_gpio.h</path>
+            <path>hal/include/hpl_init.h</path>
+            <path>hal/include/hpl_irq.h</path>
+            <path>hal/include/hpl_missing_features.h</path>
+            <path>hal/include/hpl_reset.h</path>
+            <path>hal/include/hpl_sleep.h</path>
+        </group>
+
+        <group name="hal/src">
+            <path>hal/src/hal_atomic.c</path>
+            <path>hal/src/hal_delay.c</path>
+            <path>hal/src/hal_ext_irq.c</path>
+            <path>hal/src/hal_gpio.c</path>
+            <path>hal/src/hal_init.c</path>
+            <path>hal/src/hal_io.c</path>
+            <path>hal/src/hal_sleep.c</path>
+        </group>
+
+        <group name="hal/utils/include">
+            <path>hal/utils/include/compiler.h</path>
+            <path>hal/utils/include/err_codes.h</path>
+            <path>hal/utils/include/events.h</path>
+            <path>hal/utils/include/parts.h</path>
+            <path>hal/utils/include/utils.h</path>
+            <path>hal/utils/include/utils_assert.h</path>
+            <path>hal/utils/include/utils_event.h</path>
+            <path>hal/utils/include/utils_list.h</path>
+        </group>
+
+        <group name="hal/utils/src">
+            <path>hal/utils/src/utils_assert.c</path>
+            <path>hal/utils/src/utils_event.c</path>
+            <path>hal/utils/src/utils_list.c</path>
+        </group>
+
+        <group name="hpl/core">
+            <path>hpl/core/hpl_core_m0plus_base.c</path>
+            <path>hpl/core/hpl_core_port.h</path>
+            <path>hpl/core/hpl_init.c</path>
+        </group>
+
+        <group name="hpl/eic">
+            <path>hpl/eic/hpl_eic.c</path>
+        </group>
+
+        <group name="hpl/gclk">
+            <path>hpl/gclk/hpl_gclk.c</path>
+            <path>hpl/gclk/hpl_gclk_base.h</path>
+        </group>
+
+        <group name="hpl/pm">
+            <path>hpl/pm/hpl_pm.c</path>
+            <path>hpl/pm/hpl_pm_base.h</path>
+        </group>
+
+        <group name="hpl/port">
+            <path>hpl/port/hpl_gpio_base.h</path>
+        </group>
+
+        <group name="hpl/sysctrl">
+            <path>hpl/sysctrl/hpl_sysctrl.c</path>
+        </group>
+
+        <group name="hri">
+            <path>hri/hri_ac_d20.h</path>
+            <path>hri/hri_adc_d20.h</path>
+            <path>hri/hri_d20.h</path>
+            <path>hri/hri_dac_d20.h</path>
+            <path>hri/hri_dsu_d20.h</path>
+            <path>hri/hri_eic_d20.h</path>
+            <path>hri/hri_evsys_d20.h</path>
+            <path>hri/hri_gclk_d20.h</path>
+            <path>hri/hri_nvic_d20.h</path>
+            <path>hri/hri_nvmctrl_d20.h</path>
+            <path>hri/hri_pac_d20.h</path>
+            <path>hri/hri_pm_d20.h</path>
+            <path>hri/hri_port_d20.h</path>
+            <path>hri/hri_rtc_d20.h</path>
+            <path>hri/hri_sercom_d20.h</path>
+            <path>hri/hri_sysctrl_d20.h</path>
+            <path>hri/hri_systemcontrol_d20.h</path>
+            <path>hri/hri_systick_d20.h</path>
+            <path>hri/hri_tc_d20.h</path>
+            <path>hri/hri_wdt_d20.h</path>
+        </group>
+
+        <group name="samd20b/iar">
+            <path>samd20b/iar/system_samd20.c</path>
+        </group>
+
+        <group name="samd20b/iar/iar">
+            <path>samd20b/iar/iar/startup_samd20.c</path>
+        </group>
+
+        <group name="samd20b/include">
+            <path>samd20b/include/component-version.h</path>
+            <path>samd20b/include/sam.h</path>
+            <path>samd20b/include/sam.h</path>
+            <path>samd20b/include/samd20.h</path>
+            <path>samd20b/include/samd20e14b.h</path>
+            <path>samd20b/include/samd20e15b.h</path>
+            <path>samd20b/include/samd20e15bu.h</path>
+            <path>samd20b/include/samd20e16b.h</path>
+            <path>samd20b/include/samd20e16bu.h</path>
+            <path>samd20b/include/samd20g14b.h</path>
+            <path>samd20b/include/samd20g15b.h</path>
+            <path>samd20b/include/samd20g16b.h</path>
+            <path>samd20b/include/samd20j14b.h</path>
+            <path>samd20b/include/samd20j15b.h</path>
+            <path>samd20b/include/samd20j16b.h</path>
+            <path>samd20b/include/system_samd20.h</path>
+        </group>
+
+        <group name="samd20b/include/component">
+            <path>samd20b/include/component/ac.h</path>
+            <path>samd20b/include/component/adc.h</path>
+            <path>samd20b/include/component/dac.h</path>
+            <path>samd20b/include/component/dsu.h</path>
+            <path>samd20b/include/component/eic.h</path>
+            <path>samd20b/include/component/evsys.h</path>
+            <path>samd20b/include/component/gclk.h</path>
+            <path>samd20b/include/component/nvmctrl.h</path>
+            <path>samd20b/include/component/pac.h</path>
+            <path>samd20b/include/component/pm.h</path>
+            <path>samd20b/include/component/port.h</path>
+            <path>samd20b/include/component/rtc.h</path>
+            <path>samd20b/include/component/sercom.h</path>
+            <path>samd20b/include/component/sysctrl.h</path>
+            <path>samd20b/include/component/tc.h</path>
+            <path>samd20b/include/component/wdt.h</path>
+        </group>
+
+        <group name="samd20b/include/instance">
+            <path>samd20b/include/instance/ac.h</path>
+            <path>samd20b/include/instance/adc.h</path>
+            <path>samd20b/include/instance/dac.h</path>
+            <path>samd20b/include/instance/dsu.h</path>
+            <path>samd20b/include/instance/eic.h</path>
+            <path>samd20b/include/instance/evsys.h</path>
+            <path>samd20b/include/instance/gclk.h</path>
+            <path>samd20b/include/instance/nvmctrl.h</path>
+            <path>samd20b/include/instance/pac0.h</path>
+            <path>samd20b/include/instance/pac1.h</path>
+            <path>samd20b/include/instance/pac2.h</path>
+            <path>samd20b/include/instance/pm.h</path>
+            <path>samd20b/include/instance/port.h</path>
+            <path>samd20b/include/instance/ptc.h</path>
+            <path>samd20b/include/instance/rtc.h</path>
+            <path>samd20b/include/instance/sercom0.h</path>
+            <path>samd20b/include/instance/sercom1.h</path>
+            <path>samd20b/include/instance/sercom2.h</path>
+            <path>samd20b/include/instance/sercom3.h</path>
+            <path>samd20b/include/instance/sercom4.h</path>
+            <path>samd20b/include/instance/sercom5.h</path>
+            <path>samd20b/include/instance/sysctrl.h</path>
+            <path>samd20b/include/instance/tc0.h</path>
+            <path>samd20b/include/instance/tc1.h</path>
+            <path>samd20b/include/instance/tc2.h</path>
+            <path>samd20b/include/instance/tc3.h</path>
+            <path>samd20b/include/instance/tc4.h</path>
+            <path>samd20b/include/instance/tc5.h</path>
+            <path>samd20b/include/instance/tc6.h</path>
+            <path>samd20b/include/instance/tc7.h</path>
+            <path>samd20b/include/instance/wdt.h</path>
+        </group>
+
+        <group name="samd20b/include/pio">
+            <path>samd20b/include/pio/samd20e14b.h</path>
+            <path>samd20b/include/pio/samd20e15b.h</path>
+            <path>samd20b/include/pio/samd20e15bu.h</path>
+            <path>samd20b/include/pio/samd20e16b.h</path>
+            <path>samd20b/include/pio/samd20e16bu.h</path>
+            <path>samd20b/include/pio/samd20g14b.h</path>
+            <path>samd20b/include/pio/samd20g15b.h</path>
+            <path>samd20b/include/pio/samd20g16b.h</path>
+            <path>samd20b/include/pio/samd20j14b.h</path>
+            <path>samd20b/include/pio/samd20j15b.h</path>
+            <path>samd20b/include/pio/samd20j16b.h</path>
+        </group>
+    </files>
+</iarProjectConnection>

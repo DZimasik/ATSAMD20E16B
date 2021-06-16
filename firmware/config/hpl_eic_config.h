@@ -29,14 +29,14 @@
 // <e> Interrupt 0 Settings
 // <id> eic_arch_enable_irq_setting0
 #ifndef CONF_EIC_ENABLE_IRQ_SETTING0
-#define CONF_EIC_ENABLE_IRQ_SETTING0 0
+#define CONF_EIC_ENABLE_IRQ_SETTING0 1
 #endif
 
 // <q> External Interrupt 0 Event Output Enable
 // <i> Indicates whether the external interrupt 0 event output is enabled or not
 // <id> eic_arch_extinteo0
 #ifndef CONF_EIC_EXTINTEO0
-#define CONF_EIC_EXTINTEO0 0
+#define CONF_EIC_EXTINTEO0 1
 #endif
 
 // <q> External Interrupt 0 Wake-up Enable

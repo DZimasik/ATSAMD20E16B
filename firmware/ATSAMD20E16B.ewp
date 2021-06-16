@@ -32,11 +32,11 @@
                 </option>
                 <option>
                     <name>Input description</name>
-                    <state>Full formatting, without multibyte support.</state>
+                    <state>Automatic choice of formatter, without multibyte support.</state>
                 </option>
                 <option>
                     <name>Output description</name>
-                    <state>Full formatting, without multibyte support.</state>
+                    <state>Automatic choice of formatter, without multibyte support.</state>
                 </option>
                 <option>
                     <name>GOutputBinary</name>
@@ -62,7 +62,7 @@
                 </option>
                 <option>
                     <name>OGProductVersion</name>
-                    <state>5.10.0.159</state>
+                    <state>8.50.9.33458</state>
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
@@ -173,7 +173,7 @@
                 <option>
                     <name>OGPrintfVariant</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>OGPrintfMultibyteSupport</name>
@@ -182,7 +182,7 @@
                 <option>
                     <name>OGScanfVariant</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>OGScanfMultibyteSupport</name>
@@ -219,13 +219,9 @@
                 <wantNonLocal>1</wantNonLocal>
                 <debug>1</debug>
                 <option>
-                    <name>CCOptimizationNoSizeConstraints</name>
-                    <state>0</state>
-                </option>
-                <option>
                     <name>CCDefines</name>
-                    <state>__SAMD20E16BU__</state>
-                    <state>F_CPU=8000000</state>
+                    <state>__SAMD20E16B__</state>
+                    <state>F_CPU=48000000</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -237,7 +233,7 @@
                 </option>
                 <option>
                     <name>CCPreprocLine</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>CCListCFile</name>
@@ -358,13 +354,9 @@
                     <state>$PROJ_DIR$\hpl\core</state>
                     <state>$PROJ_DIR$\hpl\eic</state>
                     <state>$PROJ_DIR$\hpl\gclk</state>
-                    <state>$PROJ_DIR$\hpl\nvmctrl</state>
                     <state>$PROJ_DIR$\hpl\pm</state>
                     <state>$PROJ_DIR$\hpl\port</state>
-                    <state>$PROJ_DIR$\hpl\rtc</state>
-                    <state>$PROJ_DIR$\hpl\sercom</state>
                     <state>$PROJ_DIR$\hpl\sysctrl</state>
-                    <state>$PROJ_DIR$\hpl\systick</state>
                     <state>$PROJ_DIR$\hri</state>
                     <state>$PROJ_DIR$\</state>
                     <state>$PROJ_DIR$\CMSIS\Core\Include</state>
@@ -443,6 +435,10 @@
                 </option>
                 <option>
                     <name>IccFloatSemantics</name>
+                    <state>0</state>
+                </option>
+                <option>
+                    <name>CCOptimizationNoSizeConstraints</name>
                     <state>0</state>
                 </option>
                 <option>
@@ -546,7 +542,7 @@
                 </option>
                 <option>
                     <name>ADefines</name>
-                    <state>__SAMD20E16BU__</state>
+                    <state>__SAMD20E16B__</state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -622,7 +618,7 @@
                 </option>
                 <option>
                     <name>AOutputFile</name>
-                    <state>$FILE_BNAME$.o</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>ALimitErrorsCheck</name>
@@ -646,13 +642,9 @@
                     <state>$PROJ_DIR$\hpl\core</state>
                     <state>$PROJ_DIR$\hpl\eic</state>
                     <state>$PROJ_DIR$\hpl\gclk</state>
-                    <state>$PROJ_DIR$\hpl\nvmctrl</state>
                     <state>$PROJ_DIR$\hpl\pm</state>
                     <state>$PROJ_DIR$\hpl\port</state>
-                    <state>$PROJ_DIR$\hpl\rtc</state>
-                    <state>$PROJ_DIR$\hpl\sercom</state>
                     <state>$PROJ_DIR$\hpl\sysctrl</state>
-                    <state>$PROJ_DIR$\hpl\systick</state>
                     <state>$PROJ_DIR$\hri</state>
                     <state>$PROJ_DIR$\</state>
                     <state>$PROJ_DIR$\CMSIS\Core\Include</state>
@@ -694,7 +686,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state>ATSAMD20E16B.srec</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -736,10 +728,6 @@
                 <wantNonLocal>1</wantNonLocal>
                 <debug>1</debug>
                 <option>
-                    <name>IlinkOutputFile</name>
-                    <state>$PROJ_FNAME$.out</state>
-                </option>
-                <option>
                     <name>IlinkLibIOConfig</name>
                     <state>1</state>
                 </option>
@@ -750,6 +738,10 @@
                 <option>
                     <name>IlinkInputFileSlave</name>
                     <state>0</state>
+                </option>
+                <option>
+                    <name>IlinkOutputFile</name>
+                    <state>ATSAMD20E16B.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -813,7 +805,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\samd20b\iar\iar\samd20e16bu_flash.icf</state>
+                    <state>$PROJ_DIR$\samd20b\iar\iar\samd20e16b_flash.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -1158,11 +1150,11 @@
                 </option>
                 <option>
                     <name>OGProductVersion</name>
-                    <state>5.10.0.159</state>
+                    <state>8.50.9.33458</state>
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
-                    <state>7.50.2.0</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>GeneralEnableMisra</name>
@@ -1174,7 +1166,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>Default	None</state>
+                    <state>ATSAMD20E16B	Microchip ATSAMD20E16B</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -1182,7 +1174,7 @@
                 </option>
                 <option>
                     <name>GEndianModeBE</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>OGBufferedTerminalOutput</name>
@@ -1234,7 +1226,7 @@
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state></state>
+                    <state>-</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -1269,7 +1261,7 @@
                 <option>
                     <name>OGPrintfVariant</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>OGPrintfMultibyteSupport</name>
@@ -1278,7 +1270,7 @@
                 <option>
                     <name>OGScanfVariant</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>OGScanfMultibyteSupport</name>
@@ -1315,14 +1307,10 @@
                 <wantNonLocal>1</wantNonLocal>
                 <debug>0</debug>
                 <option>
-                    <name>CCOptimizationNoSizeConstraints</name>
-                    <state>0</state>
-                </option>
-                <option>
                     <name>CCDefines</name>
                     <state>NDEBUG</state>
-                    <state>__SAMD20E16BU__</state>
-                    <state>F_CPU=8000000</state>
+                    <state>__SAMD20E16B__</state>
+                    <state>F_CPU=48000000</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -1334,7 +1322,7 @@
                 </option>
                 <option>
                     <name>CCPreprocLine</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>CCListCFile</name>
@@ -1455,13 +1443,9 @@
                     <state>$PROJ_DIR$\hpl\core</state>
                     <state>$PROJ_DIR$\hpl\eic</state>
                     <state>$PROJ_DIR$\hpl\gclk</state>
-                    <state>$PROJ_DIR$\hpl\nvmctrl</state>
                     <state>$PROJ_DIR$\hpl\pm</state>
                     <state>$PROJ_DIR$\hpl\port</state>
-                    <state>$PROJ_DIR$\hpl\rtc</state>
-                    <state>$PROJ_DIR$\hpl\sercom</state>
                     <state>$PROJ_DIR$\hpl\sysctrl</state>
-                    <state>$PROJ_DIR$\hpl\systick</state>
                     <state>$PROJ_DIR$\hri</state>
                     <state>$PROJ_DIR$\</state>
                     <state>$PROJ_DIR$\CMSIS\Core\Include</state>
@@ -1490,7 +1474,7 @@
                 </option>
                 <option>
                     <name>CCOptLevelSlave</name>
-                    <state>3</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>CompilerMisraRules98</name>
@@ -1540,6 +1524,10 @@
                 </option>
                 <option>
                     <name>IccFloatSemantics</name>
+                    <state>0</state>
+                </option>
+                <option>
+                    <name>CCOptimizationNoSizeConstraints</name>
                     <state>0</state>
                 </option>
                 <option>
@@ -1643,7 +1631,7 @@
                 </option>
                 <option>
                     <name>ADefines</name>
-                    <state>__SAMD20E16BU__</state>
+                    <state>__SAMD20E16B__</state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -1743,13 +1731,9 @@
                     <state>$PROJ_DIR$\hpl\core</state>
                     <state>$PROJ_DIR$\hpl\eic</state>
                     <state>$PROJ_DIR$\hpl\gclk</state>
-                    <state>$PROJ_DIR$\hpl\nvmctrl</state>
                     <state>$PROJ_DIR$\hpl\pm</state>
                     <state>$PROJ_DIR$\hpl\port</state>
-                    <state>$PROJ_DIR$\hpl\rtc</state>
-                    <state>$PROJ_DIR$\hpl\sercom</state>
                     <state>$PROJ_DIR$\hpl\sysctrl</state>
-                    <state>$PROJ_DIR$\hpl\systick</state>
                     <state>$PROJ_DIR$\hri</state>
                     <state>$PROJ_DIR$\</state>
                     <state>$PROJ_DIR$\CMSIS\Core\Include</state>
@@ -1833,10 +1817,6 @@
                 <wantNonLocal>1</wantNonLocal>
                 <debug>0</debug>
                 <option>
-                    <name>IlinkOutputFile</name>
-                    <state>$PROJ_FNAME$.out</state>
-                </option>
-                <option>
                     <name>IlinkLibIOConfig</name>
                     <state>1</state>
                 </option>
@@ -1847,6 +1827,10 @@
                 <option>
                     <name>IlinkInputFileSlave</name>
                     <state>0</state>
+                </option>
+                <option>
+                    <name>IlinkOutputFile</name>
+                    <state>###Unitialized###</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -1910,7 +1894,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\samd20b\iar\iar\samd20e16bu_flash.icf</state>
+                    <state>$PROJ_DIR$\samd20b\iar\iar\samd20e16b_flash.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -2277,25 +2261,22 @@
                 <name>$PROJ_DIR$\config\hpl_gclk_config.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\config\hpl_nvmctrl_config.h</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\config\hpl_pm_config.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\config\hpl_rtc_config.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\config\hpl_sercom_config.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\config\hpl_sysctrl_config.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\config\hpl_systick_config.h</name>
+                <name>$PROJ_DIR$\config\peripheral_clk_config.h</name>
+            </file>
+        </group>
+        <group>
+            <name>examples</name>
+            <file>
+                <name>$PROJ_DIR$\examples\driver_examples.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\config\peripheral_clk_config.h</name>
+                <name>$PROJ_DIR$\examples\driver_examples.h</name>
             </file>
         </group>
         <group>
@@ -2312,9 +2293,6 @@
                     <name>$PROJ_DIR$\hal\include\hal_ext_irq.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\hal\include\hal_flash.h</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\hal\include\hal_gpio.h</name>
                 </file>
                 <file>
@@ -2327,43 +2305,16 @@
                     <name>$PROJ_DIR$\hal\include\hal_sleep.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\hal\include\hal_spi_m_sync.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hal_timer.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_calendar.h</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\hal\include\hpl_core.h</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\hal\include\hpl_delay.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_dma.h</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\hal\include\hpl_ext_irq.h</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_flash.h</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\hal\include\hpl_gpio.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_i2c_m_async.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_i2c_m_sync.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_i2c_s_async.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_i2c_s_sync.h</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\hal\include\hpl_init.h</name>
@@ -2380,51 +2331,6 @@
                 <file>
                     <name>$PROJ_DIR$\hal\include\hpl_sleep.h</name>
                 </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_spi.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_spi_async.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_spi_dma.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_spi_m_async.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_spi_m_dma.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_spi_m_sync.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_spi_s_async.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_spi_s_sync.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_spi_sync.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_time_measure.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_timer.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_usart.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_usart_async.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_usart_sync.h</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\include\hpl_user_area.h</name>
-                </file>
             </group>
             <group>
                 <name>src</name>
@@ -2438,9 +2344,6 @@
                     <name>$PROJ_DIR$\hal\src\hal_ext_irq.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\hal\src\hal_flash.c</name>
-                </file>
-                <file>
                     <name>$PROJ_DIR$\hal\src\hal_gpio.c</name>
                 </file>
                 <file>
@@ -2451,12 +2354,6 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\hal\src\hal_sleep.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\src\hal_spi_m_sync.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hal\src\hal_timer.c</name>
                 </file>
             </group>
             <group>
@@ -2482,22 +2379,10 @@
                         <name>$PROJ_DIR$\hal\utils\include\utils_assert.h</name>
                     </file>
                     <file>
-                        <name>$PROJ_DIR$\hal\utils\include\utils_decrement_macro.h</name>
-                    </file>
-                    <file>
                         <name>$PROJ_DIR$\hal\utils\include\utils_event.h</name>
                     </file>
                     <file>
-                        <name>$PROJ_DIR$\hal\utils\include\utils_increment_macro.h</name>
-                    </file>
-                    <file>
                         <name>$PROJ_DIR$\hal\utils\include\utils_list.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\hal\utils\include\utils_recursion_macro.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\hal\utils\include\utils_repeat_macro.h</name>
                     </file>
                 </group>
                 <group>
@@ -2544,12 +2429,6 @@
                 </file>
             </group>
             <group>
-                <name>nvmctrl</name>
-                <file>
-                    <name>$PROJ_DIR$\hpl\nvmctrl\hpl_nvmctrl.c</name>
-                </file>
-            </group>
-            <group>
                 <name>pm</name>
                 <file>
                     <name>$PROJ_DIR$\hpl\pm\hpl_pm.c</name>
@@ -2565,30 +2444,9 @@
                 </file>
             </group>
             <group>
-                <name>rtc</name>
-                <file>
-                    <name>$PROJ_DIR$\hpl\rtc\hpl_rtc.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\hpl\rtc\hpl_rtc_base.h</name>
-                </file>
-            </group>
-            <group>
-                <name>sercom</name>
-                <file>
-                    <name>$PROJ_DIR$\hpl\sercom\hpl_sercom.c</name>
-                </file>
-            </group>
-            <group>
                 <name>sysctrl</name>
                 <file>
                     <name>$PROJ_DIR$\hpl\sysctrl\hpl_sysctrl.c</name>
-                </file>
-            </group>
-            <group>
-                <name>systick</name>
-                <file>
-                    <name>$PROJ_DIR$\hpl\systick\hpl_systick.c</name>
                 </file>
             </group>
         </group>
@@ -2916,8 +2774,11 @@
         <file>
             <name>$PROJ_DIR$\driver_init.h</name>
         </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+        </file>
     </group>
     <file>
-        <name>$PROJ_DIR$\main.c</name>
+        <name>$PROJ_DIR$\iar-project-connection.ipcf</name>
     </file>
 </project>

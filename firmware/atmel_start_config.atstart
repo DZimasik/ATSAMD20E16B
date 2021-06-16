@@ -1,0 +1,353 @@
+format_version: '2'
+name: ATSAMD20E16B
+versions:
+  api: '1.0'
+  backend: 1.8.580
+  commit: f3d8d96e294de8dee688333bbbe8d8458a4f6b4c
+  content: unknown
+  content_pack_name: unknown
+  format: '2'
+  frontend: 1.8.580
+  packs_version_avr8: 1.0.1463
+  packs_version_qtouch: unknown
+  packs_version_sam: 1.0.1726
+  version_backend: 1.8.580
+  version_frontend: ''
+board:
+  identifier: CustomBoard
+  device: SAMD20E16B-MN
+details: null
+application: null
+middlewares: {}
+drivers:
+  ext_int_event:
+    user_label: ext_int_event
+    definition: Atmel:SAMD20_Drivers:0.0.1::SAMD20E16B-MN::EIC::driver_config_definition::Default::HAL:Driver:Ext.IRQ
+    functionality: External_IRQ
+    api: HAL:Driver:Ext_IRQ
+    configuration:
+      eic_arch_enable_irq_setting0: true
+      eic_arch_enable_irq_setting1: false
+      eic_arch_enable_irq_setting10: false
+      eic_arch_enable_irq_setting11: false
+      eic_arch_enable_irq_setting12: false
+      eic_arch_enable_irq_setting13: false
+      eic_arch_enable_irq_setting14: false
+      eic_arch_enable_irq_setting15: false
+      eic_arch_enable_irq_setting2: false
+      eic_arch_enable_irq_setting3: false
+      eic_arch_enable_irq_setting4: false
+      eic_arch_enable_irq_setting5: false
+      eic_arch_enable_irq_setting6: false
+      eic_arch_enable_irq_setting7: false
+      eic_arch_enable_irq_setting8: false
+      eic_arch_enable_irq_setting9: false
+      eic_arch_extinteo0: true
+      eic_arch_extinteo1: false
+      eic_arch_extinteo10: false
+      eic_arch_extinteo11: false
+      eic_arch_extinteo12: false
+      eic_arch_extinteo13: false
+      eic_arch_extinteo14: false
+      eic_arch_extinteo15: false
+      eic_arch_extinteo2: false
+      eic_arch_extinteo3: false
+      eic_arch_extinteo4: false
+      eic_arch_extinteo5: false
+      eic_arch_extinteo6: false
+      eic_arch_extinteo7: false
+      eic_arch_extinteo8: false
+      eic_arch_extinteo9: false
+      eic_arch_filten0: false
+      eic_arch_filten1: false
+      eic_arch_filten10: false
+      eic_arch_filten11: false
+      eic_arch_filten12: false
+      eic_arch_filten13: false
+      eic_arch_filten14: false
+      eic_arch_filten15: false
+      eic_arch_filten2: false
+      eic_arch_filten3: false
+      eic_arch_filten4: false
+      eic_arch_filten5: false
+      eic_arch_filten6: false
+      eic_arch_filten7: false
+      eic_arch_filten8: false
+      eic_arch_filten9: false
+      eic_arch_nmifilten: false
+      eic_arch_nmisense: No detection
+      eic_arch_sense0: Falling-edge detection
+      eic_arch_sense1: No detection
+      eic_arch_sense10: No detection
+      eic_arch_sense11: No detection
+      eic_arch_sense12: No detection
+      eic_arch_sense13: No detection
+      eic_arch_sense14: No detection
+      eic_arch_sense15: No detection
+      eic_arch_sense2: No detection
+      eic_arch_sense3: No detection
+      eic_arch_sense4: No detection
+      eic_arch_sense5: No detection
+      eic_arch_sense6: No detection
+      eic_arch_sense7: No detection
+      eic_arch_sense8: No detection
+      eic_arch_sense9: No detection
+      eic_arch_wakeupen0: false
+      eic_arch_wakeupen1: false
+      eic_arch_wakeupen10: false
+      eic_arch_wakeupen11: false
+      eic_arch_wakeupen12: false
+      eic_arch_wakeupen13: false
+      eic_arch_wakeupen14: false
+      eic_arch_wakeupen15: false
+      eic_arch_wakeupen2: false
+      eic_arch_wakeupen3: false
+      eic_arch_wakeupen4: false
+      eic_arch_wakeupen5: false
+      eic_arch_wakeupen6: false
+      eic_arch_wakeupen7: false
+      eic_arch_wakeupen8: false
+      eic_arch_wakeupen9: false
+    optional_signals:
+    - identifier: ext_int_event:EXTINT/0
+      pad: PA00
+      mode: Enabled
+      configuration: null
+      definition: Atmel:SAMD20_Drivers:0.0.1::SAMD20E16B-MN::optional_signal_definition::EIC.EXTINT.0
+      name: EIC/EXTINT/0
+      label: EXTINT/0
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: EIC
+          input: Generic clock generator 0
+          external: false
+          external_frequency: 0
+        configuration:
+          eic_gclk_selection: Generic clock generator 0
+  GCLK:
+    user_label: GCLK
+    definition: Atmel:SAMD20_Drivers:0.0.1::SAMD20E16B-MN::GCLK::driver_config_definition::GCLK::HAL:HPL:GCLK
+    functionality: System
+    api: HAL:HPL:GCLK
+    configuration:
+      $input: 400000
+      $input_id: External Crystal Oscillator 0.4-32MHz (XOSC)
+      RESERVED_InputFreq: 400000
+      RESERVED_InputFreq_id: External Crystal Oscillator 0.4-32MHz (XOSC)
+      _$freq_output_Generic clock generator 0: 48000000
+      _$freq_output_Generic clock generator 1: 48000000
+      _$freq_output_Generic clock generator 2: 32768
+      _$freq_output_Generic clock generator 3: 32768
+      _$freq_output_Generic clock generator 4: 400000
+      _$freq_output_Generic clock generator 5: 400000
+      _$freq_output_Generic clock generator 6: 400000
+      _$freq_output_Generic clock generator 7: 400000
+      enable_gclk_gen_0: true
+      enable_gclk_gen_0__externalclock: 1000000
+      enable_gclk_gen_1: false
+      enable_gclk_gen_1__externalclock: 1000000
+      enable_gclk_gen_2: true
+      enable_gclk_gen_2__externalclock: 1000000
+      enable_gclk_gen_3: false
+      enable_gclk_gen_3__externalclock: 1000000
+      enable_gclk_gen_4: false
+      enable_gclk_gen_4__externalclock: 1000000
+      enable_gclk_gen_5: false
+      enable_gclk_gen_5__externalclock: 1000000
+      enable_gclk_gen_6: false
+      enable_gclk_gen_6__externalclock: 1000000
+      enable_gclk_gen_7: false
+      enable_gclk_gen_7__externalclock: 1000000
+      gclk_arch_gen_0_RUNSTDBY: false
+      gclk_arch_gen_0_enable: true
+      gclk_arch_gen_0_idc: false
+      gclk_arch_gen_0_oe: false
+      gclk_arch_gen_0_oov: false
+      gclk_arch_gen_1_RUNSTDBY: false
+      gclk_arch_gen_1_enable: false
+      gclk_arch_gen_1_idc: false
+      gclk_arch_gen_1_oe: false
+      gclk_arch_gen_1_oov: false
+      gclk_arch_gen_2_RUNSTDBY: false
+      gclk_arch_gen_2_enable: true
+      gclk_arch_gen_2_idc: false
+      gclk_arch_gen_2_oe: false
+      gclk_arch_gen_2_oov: false
+      gclk_arch_gen_3_RUNSTDBY: false
+      gclk_arch_gen_3_enable: false
+      gclk_arch_gen_3_idc: false
+      gclk_arch_gen_3_oe: false
+      gclk_arch_gen_3_oov: false
+      gclk_arch_gen_4_RUNSTDBY: false
+      gclk_arch_gen_4_enable: false
+      gclk_arch_gen_4_idc: false
+      gclk_arch_gen_4_oe: false
+      gclk_arch_gen_4_oov: false
+      gclk_arch_gen_5_RUNSTDBY: false
+      gclk_arch_gen_5_enable: false
+      gclk_arch_gen_5_idc: false
+      gclk_arch_gen_5_oe: false
+      gclk_arch_gen_5_oov: false
+      gclk_arch_gen_6_RUNSTDBY: false
+      gclk_arch_gen_6_enable: false
+      gclk_arch_gen_6_idc: false
+      gclk_arch_gen_6_oe: false
+      gclk_arch_gen_6_oov: false
+      gclk_arch_gen_7_RUNSTDBY: false
+      gclk_arch_gen_7_enable: false
+      gclk_arch_gen_7_idc: false
+      gclk_arch_gen_7_oe: false
+      gclk_arch_gen_7_oov: false
+      gclk_gen_0_div: 1
+      gclk_gen_0_div_sel: false
+      gclk_gen_0_oscillator: Digital Frequency Locked Loop (DFLL48M)
+      gclk_gen_1_div: 1
+      gclk_gen_1_div_sel: false
+      gclk_gen_1_oscillator: Digital Frequency Locked Loop (DFLL48M)
+      gclk_gen_2_div: 1
+      gclk_gen_2_div_sel: false
+      gclk_gen_2_oscillator: 32kHz High Accuracy Internal Oscillator (OSC32K)
+      gclk_gen_3_div: 1
+      gclk_gen_3_div_sel: false
+      gclk_gen_3_oscillator: 32kHz High Accuracy Internal Oscillator (OSC32K)
+      gclk_gen_4_div: 1
+      gclk_gen_4_div_sel: false
+      gclk_gen_4_oscillator: External Crystal Oscillator 0.4-32MHz (XOSC)
+      gclk_gen_5_div: 1
+      gclk_gen_5_div_sel: false
+      gclk_gen_5_oscillator: External Crystal Oscillator 0.4-32MHz (XOSC)
+      gclk_gen_6_div: 1
+      gclk_gen_6_div_sel: false
+      gclk_gen_6_oscillator: External Crystal Oscillator 0.4-32MHz (XOSC)
+      gclk_gen_7_div: 1
+      gclk_gen_7_div_sel: false
+      gclk_gen_7_oscillator: External Crystal Oscillator 0.4-32MHz (XOSC)
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  PM:
+    user_label: PM
+    definition: Atmel:SAMD20_Drivers:0.0.1::SAMD20E16B-MN::PM::driver_config_definition::PM::HAL:HPL:PM
+    functionality: System
+    api: HAL:HPL:PM
+    configuration:
+      $input: 48000000
+      $input_id: Generic clock generator 0
+      RESERVED_InputFreq: 48000000
+      RESERVED_InputFreq_id: Generic clock generator 0
+      _$freq_output_CPU: 48000000
+      apba_div: '1'
+      apbb_div: '1'
+      apbc_div: '1'
+      cpu_clock_source: Generic clock generator 0
+      cpu_div: '1'
+      enable_cpu_clock: true
+      nvm_wait_states: '1'
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: CPU
+          input: CPU
+          external: false
+          external_frequency: 0
+        configuration: {}
+  SYSCTRL:
+    user_label: SYSCTRL
+    definition: Atmel:SAMD20_Drivers:0.0.1::SAMD20E16B-MN::SYSCTRL::driver_config_definition::SYSCTRL::HAL:HPL:SYSCTRL
+    functionality: System
+    api: HAL:HPL:SYSCTRL
+    configuration:
+      $input: 32768
+      $input_id: Generic clock generator 2
+      RESERVED_InputFreq: 32768
+      RESERVED_InputFreq_id: Generic clock generator 2
+      _$freq_output_8MHz Internal Oscillator (OSC8M): 1000000
+      _$freq_output_Digital Frequency Locked Loop (DFLL48M): 48000000
+      _$freq_output_External Crystal Oscillator 0.4-32MHz (XOSC): 400000
+      dfll48m_arch_calibration: false
+      dfll48m_arch_ccdis: true
+      dfll48m_arch_coarse: 31
+      dfll48m_arch_enable: true
+      dfll48m_arch_fine: 512
+      dfll48m_arch_llaw: true
+      dfll48m_arch_ondemand: true
+      dfll48m_arch_qldis: true
+      dfll48m_arch_runstdby: false
+      dfll48m_arch_stable: true
+      dfll48m_mode: Open Loop Mode
+      dfll48m_mul: 0
+      dfll48m_ref_clock: Generic clock generator 2
+      dfll_arch_cstep: 1
+      dfll_arch_fstep: 1
+      enable_dfll48m: true
+      enable_osc32k: true
+      enable_osc8m: false
+      enable_osculp32k: true
+      enable_xosc: false
+      enable_xosc32k: false
+      osc32k_arch_calib: 0
+      osc32k_arch_en1k: false
+      osc32k_arch_en32k: true
+      osc32k_arch_enable: true
+      osc32k_arch_ondemand: true
+      osc32k_arch_overwrite_calibration: false
+      osc32k_arch_runstdby: false
+      osc32k_arch_startup: 3 Clock Cycles (92us)
+      osc32k_arch_wrtlock: false
+      osc8m_arch_calib: 0
+      osc8m_arch_enable: false
+      osc8m_arch_ondemand: true
+      osc8m_arch_overwrite_calibration: false
+      osc8m_arch_runstdby: false
+      osc8m_presc: '8'
+      osculp32k_arch_calib: 0
+      osculp32k_arch_overwrite_calibration: false
+      osculp32k_arch_wrtlock: false
+      xosc32k_arch_aampen: false
+      xosc32k_arch_en1k: false
+      xosc32k_arch_en32k: false
+      xosc32k_arch_enable: false
+      xosc32k_arch_ondemand: true
+      xosc32k_arch_runstdby: false
+      xosc32k_arch_startup: 122 us
+      xosc32k_arch_wrtlock: false
+      xosc32k_arch_xtalen: false
+      xosc_arch_ampgc: false
+      xosc_arch_enable: false
+      xosc_arch_gain: 2Mhz
+      xosc_arch_ondemand: true
+      xosc_arch_runstdby: false
+      xosc_arch_startup: 31 us
+      xosc_arch_xtalen: false
+      xosc_frequency: 400000
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+pads:
+  EXT_BUTTON:
+    name: PA00
+    definition: Atmel:SAMD20_Drivers:0.0.1::SAMD20E16B-MN::pad::PA00
+    mode: Digital input
+    user_label: EXT_BUTTON
+    configuration:
+      pad_pull_config: Pull-up
+  LED_0:
+    name: PA09
+    definition: Atmel:SAMD20_Drivers:0.0.1::SAMD20E16B-MN::pad::PA09
+    mode: Digital output
+    user_label: LED_0
+    configuration: null
+  LED_1:
+    name: PA10
+    definition: Atmel:SAMD20_Drivers:0.0.1::SAMD20E16B-MN::pad::PA10
+    mode: Digital output
+    user_label: LED_1
+    configuration: null
+toolchain_options: []
+static_files: []

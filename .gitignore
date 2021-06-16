@@ -5,21 +5,29 @@
 
 !/firmware
 !/firmware/CMSIS
-!/firmware/CMSIS/**
+!/firmware/CMSIS/Core
+!/firmware/CMSIS/Core**
 !/firmware/config
 !/firmware/config/**
 !/firmware/hal
-!/firmware/hal/**
+!/firmware/hal/include
+!/firmware/hal/include/**
+!/firmware/hal/src
+!/firmware/hal/src/**
+!/firmware/hal/utils
+!/firmware/hal/utils/**
 !/firmware/hpl
 !/firmware/hpl/**
 !/firmware/hri
 !/firmware/hri/**
 !/firmware/samd20b
 !/firmware/samd20b/**
-!/firmware/*c
-!/firmware/*h
-!/firmware/*ewd
-!/firmware/*ewp
+!/firmware/*.c
+!/firmware/*.h
+!/firmware/*.ewd
+!/firmware/*.ewp
+!/firmware/*.atstart
+!/firmware/*.ipcf
 
 !/board
 !/board/*.PcbDoc

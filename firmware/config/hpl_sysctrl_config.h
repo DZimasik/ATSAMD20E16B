@@ -60,7 +60,7 @@
 // <i> Indicates whether configuration for OSC8M is enabled or not
 // <id> enable_osc8m
 #ifndef CONF_OSC8M_CONFIG
-#define CONF_OSC8M_CONFIG 1
+#define CONF_OSC8M_CONFIG 0
 #endif
 
 // <h> 8MHz Internal Oscillator (OSC8M) Control
@@ -68,7 +68,7 @@
 // <i> Indicates whether Internal 8 Mhz Oscillator is enabled or not
 // <id> osc8m_arch_enable
 #ifndef CONF_OSC8M_ENABLE
-#define CONF_OSC8M_ENABLE 1
+#define CONF_OSC8M_ENABLE 0
 #endif
 
 // <q> On Demand Control
@@ -98,7 +98,7 @@
 // <i> Default: No Prescaling
 // <id> osc8m_presc
 #ifndef CONF_OSC8M_PRESC
-#define CONF_OSC8M_PRESC SYSCTRL_OSC8M_PRESC_0_Val
+#define CONF_OSC8M_PRESC SYSCTRL_OSC8M_PRESC_3_Val
 #endif
 
 // <q> Overwrite Default Osc Calibration
@@ -123,7 +123,7 @@
 // <i> Indicates whether configuration for OSC32K is enabled or not
 // <id> enable_osc32k
 #ifndef CONF_OSC32K_CONFIG
-#define CONF_OSC32K_CONFIG 0
+#define CONF_OSC32K_CONFIG 1
 #endif
 
 // <h> 32kHz Internal Oscillator (OSC32K) Control
@@ -131,7 +131,7 @@
 // <i> Indicates whether Internal 32K Oscillator is enabled or not
 // <id> osc32k_arch_enable
 #ifndef CONF_OSC32K_ENABLE
-#define CONF_OSC32K_ENABLE 0
+#define CONF_OSC32K_ENABLE 1
 #endif
 
 // <q> On Demand Control
@@ -156,7 +156,7 @@
 // <i> Enable 32 Khz Output
 // <id> osc32k_arch_en32k
 #ifndef CONF_OSC32K_EN32K
-#define CONF_OSC32K_EN32K 0
+#define CONF_OSC32K_EN32K 1
 #endif
 
 // <q> Enable 1K
@@ -424,7 +424,7 @@
 // <i> Indicates whether configuration for DFLL is enabled or not
 // <id> enable_dfll48m
 #ifndef CONF_DFLL_CONFIG
-#define CONF_DFLL_CONFIG 0
+#define CONF_DFLL_CONFIG 1
 #endif
 
 // <y> Reference Clock Source
@@ -439,7 +439,7 @@
 // <i> Select the clock source.
 // <id> dfll48m_ref_clock
 #ifndef CONF_DFLL_GCLK
-#define CONF_DFLL_GCLK GCLK_CLKCTRL_GEN_GCLK3_Val
+#define CONF_DFLL_GCLK GCLK_CLKCTRL_GEN_GCLK2_Val
 #endif
 
 // <h> DFLL Control
@@ -447,21 +447,21 @@
 // <i> Indicates whether DFLL is enabled or not
 // <id> dfll48m_arch_enable
 #ifndef CONF_DFLL_ENABLE
-#define CONF_DFLL_ENABLE 0
+#define CONF_DFLL_ENABLE 1
 #endif
 
 // <q> Quick Lock Disable
 // <i> Quick Lock Disable
 // <id> dfll48m_arch_qldis
 #ifndef CONF_DFLL_QLDIS
-#define CONF_DFLL_QLDIS 0
+#define CONF_DFLL_QLDIS 1
 #endif
 
 // <q> Chill Cycle Disable
 // <i> Chill Cycle Disable
 // <id> dfll48m_arch_ccdis
 #ifndef CONF_DFLL_CCDIS
-#define CONF_DFLL_CCDIS 0
+#define CONF_DFLL_CCDIS 1
 #endif
 
 // <q> On Demand
@@ -486,7 +486,7 @@
 // <i> Lose Lock After Wake
 // <id> dfll48m_arch_llaw
 #ifndef CONF_DFLL_LLAW
-#define CONF_DFLL_LLAW 0
+#define CONF_DFLL_LLAW 1
 #endif
 
 // <q> Stable DFLL Frequency
@@ -495,7 +495,7 @@
 // <i> If 1: FINE calibration register value will be fixed after a fine lock.
 // <id> dfll48m_arch_stable
 #ifndef CONF_DFLL_STABLE
-#define CONF_DFLL_STABLE 0
+#define CONF_DFLL_STABLE 1
 #endif
 
 // <y> Operating Mode Selection

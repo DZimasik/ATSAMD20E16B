@@ -23,27 +23,6 @@ extern "C" {
 
 #include <hal_ext_irq.h>
 
-#include <hal_flash.h>
-
-#include <hal_spi_m_sync.h>
-
-#include <hal_delay.h>
-#include <hal_timer.h>
-
-extern struct flash_descriptor      FLASH_0;
-extern struct spi_m_sync_descriptor SPI_0;
-
-extern struct timer_descriptor TIMER_0;
-
-void FLASH_0_init(void);
-void FLASH_0_CLOCK_init(void);
-
-void SPI_0_PORT_init(void);
-void SPI_0_CLOCK_init(void);
-void SPI_0_init(void);
-
-void delay_driver_init(void);
-
 /**
  * \brief Perform system initialization, initialize pins and clocks for
  * peripherals

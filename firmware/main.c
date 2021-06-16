@@ -1,19 +1,18 @@
 #include <atmel_start.h>
 
 static void toogle_led(void){
-  gpio_toggle_pin_level(LED1);
+  gpio_toggle_pin_level(LED_1);
 }
 
-int main()
+int main(void)
 {
+  /* Initializes MCU, drivers and middleware */
   atmel_start_init();
-  
-  ext_irq_register(PA00, toogle_led);
-  
+
+  ext_irq_register(EXT_BUTTON, toogle_led);
+
+  /* Replace with your application code */
   while (1) {
-    gpio_set_pin_level(LED0,true);
-    delay_ms(100);
-    gpio_set_pin_level(LED0,false);
-    delay_ms(100);
+
   }
 }
