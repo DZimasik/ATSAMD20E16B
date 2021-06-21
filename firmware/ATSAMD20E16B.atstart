@@ -228,6 +228,19 @@ drivers:
     variant: null
     clocks:
       domain_group: null
+  FLASH_0:
+    user_label: FLASH_0
+    definition: Atmel:SAMD20_Drivers:0.0.1::SAMD20E16B-MN::NVMCTRL::driver_config_definition::Flash::HAL:Driver:FLASH
+    functionality: Flash
+    api: HAL:Driver:FLASH
+    configuration:
+      nvm_arch_cache: false
+      nvm_arch_read_mode: No Miss Penalty
+      nvm_arch_sleepprm: Disabled
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
   PM:
     user_label: PM
     definition: Atmel:SAMD20_Drivers:0.0.1::SAMD20E16B-MN::PM::driver_config_definition::PM::HAL:HPL:PM

@@ -13,6 +13,8 @@
 #include <hpl_gclk_base.h>
 #include <hpl_pm_base.h>
 
+struct flash_descriptor FLASH_0;
+
 void ext_int_event_init(void)
 {
 	_gclk_enable_channel(EIC_GCLK_ID, CONF_GCLK_EIC_SRC);
@@ -31,6 +33,18 @@ void ext_int_event_init(void)
 	gpio_set_pin_function(EXT_BUTTON, PINMUX_PA00A_EIC_EXTINT0);
 
 	ext_irq_init();
+}
+
+void FLASH_0_CLOCK_init(void)
+{
+
+	_pm_enable_bus_clock(PM_BUS_APBB, NVMCTRL);
+}
+
+void FLASH_0_init(void)
+{
+	FLASH_0_CLOCK_init();
+	flash_init(&FLASH_0, NVMCTRL);
 }
 
 void system_init(void)
@@ -66,4 +80,6 @@ void system_init(void)
 	gpio_set_pin_function(LED_1, GPIO_PIN_FUNCTION_OFF);
 
 	ext_int_event_init();
+
+	FLASH_0_init();
 }

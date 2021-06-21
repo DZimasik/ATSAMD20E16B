@@ -361,6 +361,7 @@
                     <state>$PROJ_DIR$\</state>
                     <state>$PROJ_DIR$\CMSIS\Core\Include</state>
                     <state>$PROJ_DIR$\samd20b\include</state>
+                    <state>$PROJ_DIR$\hpl\nvmctrl</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -649,6 +650,7 @@
                     <state>$PROJ_DIR$\</state>
                     <state>$PROJ_DIR$\CMSIS\Core\Include</state>
                     <state>$PROJ_DIR$\samd20b\include</state>
+                    <state>$PROJ_DIR$\hpl\nvmctrl</state>
                 </option>
                 <option>
                     <name>AExtraOptionsCheckV2</name>
@@ -1450,6 +1452,7 @@
                     <state>$PROJ_DIR$\</state>
                     <state>$PROJ_DIR$\CMSIS\Core\Include</state>
                     <state>$PROJ_DIR$\samd20b\include</state>
+                    <state>$PROJ_DIR$\hpl\nvmctrl</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1738,6 +1741,7 @@
                     <state>$PROJ_DIR$\</state>
                     <state>$PROJ_DIR$\CMSIS\Core\Include</state>
                     <state>$PROJ_DIR$\samd20b\include</state>
+                    <state>$PROJ_DIR$\hpl\nvmctrl</state>
                 </option>
                 <option>
                     <name>AExtraOptionsCheckV2</name>
@@ -2261,6 +2265,9 @@
                 <name>$PROJ_DIR$\config\hpl_gclk_config.h</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\config\hpl_nvmctrl_config.h</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\config\hpl_pm_config.h</name>
             </file>
             <file>
@@ -2293,6 +2300,9 @@
                     <name>$PROJ_DIR$\hal\include\hal_ext_irq.h</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\hal\include\hal_flash.h</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\hal\include\hal_gpio.h</name>
                 </file>
                 <file>
@@ -2314,6 +2324,9 @@
                     <name>$PROJ_DIR$\hal\include\hpl_ext_irq.h</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\hal\include\hpl_flash.h</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\hal\include\hpl_gpio.h</name>
                 </file>
                 <file>
@@ -2331,6 +2344,9 @@
                 <file>
                     <name>$PROJ_DIR$\hal\include\hpl_sleep.h</name>
                 </file>
+                <file>
+                    <name>$PROJ_DIR$\hal\include\hpl_user_area.h</name>
+                </file>
             </group>
             <group>
                 <name>src</name>
@@ -2342,6 +2358,9 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\hal\src\hal_ext_irq.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\hal\src\hal_flash.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\hal\src\hal_gpio.c</name>
@@ -2426,6 +2445,12 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\hpl\gclk\hpl_gclk_base.h</name>
+                </file>
+            </group>
+            <group>
+                <name>nvmctrl</name>
+                <file>
+                    <name>$PROJ_DIR$\hpl\nvmctrl\hpl_nvmctrl.c</name>
                 </file>
             </group>
             <group>
