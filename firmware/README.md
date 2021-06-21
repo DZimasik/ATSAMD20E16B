@@ -4,3 +4,4 @@ Launched periphery:
 1) 48MHz internal oscillator;
 2) GPIO;
 3) EXT IRQ;
+4) R/W FLASH;
